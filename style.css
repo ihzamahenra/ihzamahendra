@@ -205,7 +205,7 @@ p {
 .progress.cpp { width: 5%; }
 .progress.python { width: 5%; }
 .progress.db { width: 15%; }
-
+.progress.EFB { width: 100%; }
 /* Projects Section */
 .project-cards {
     display: grid;
