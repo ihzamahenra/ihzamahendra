@@ -1,0 +1,276 @@
+/* Global Styles */
+/* Import Poppins font is done in HTML head */
+
+:root {
+    --bg-color: #0a0a0a;
+    --text-color: #e0e0e0;
+    --accent-color: #00ffff;
+    --card-bg: #141414;
+    --shadow-color: rgba(0, 255, 255, 0.2);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    line-height: 1.6;
+    scroll-behavior: smooth;
+}
+
+.container {
+    width: 90%;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 60px 0;
+}
+
+h1, h2, h3 {
+    color: var(--accent-color);
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+p {
+    text-align: center;
+    margin-bottom: 16px;
+}
+
+/* Hero Section */
+#hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    /* animated gradient background for futuristic look */
+    background: linear-gradient(-45deg, #0a0a0a, #00101a, #0a0a0a, #00101a);
+    background-size: 400% 400%;
+    animation: gradientBG 15s ease infinite;
+    flex-direction: column;
+    text-align: center;
+}
+
+@keyframes gradientBG {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+#hero .status {
+    font-size: 1.2rem;
+    font-weight: 300;
+    margin-bottom: 10px;
+    line-height: 1.4;
+}
+
+#hero .motivation {
+    font-style: italic;
+    max-width: 600px;
+    margin-bottom: 10px;
+    
+}
+
+.btn-scroll {
+    display: inline-block;
+    margin-top: 30px;
+    padding: 12px 24px;
+    border: 2px solid var(--accent-color);
+    color: var(--accent-color);
+    text-decoration: none;
+    border-radius: 25px;
+    transition: background 0.3s, color 0.3s, transform 0.3s;
+}
+
+.btn-scroll:hover {
+    transform: translateY(-3px);
+}
+
+.btn-scroll:hover {
+    background: var(--accent-color);
+    color: var(--bg-color);
+}
+
+/* Profile image styling */
+.profile-img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid var(--accent-color);
+    box-shadow: 0 4px 12px var(--shadow-color);
+    margin-bottom: 20px;
+}
+
+/* Fade-in animation */
+.fade-in {
+    animation: fadeIn 1s ease forwards;
+    opacity: 0;
+}
+
+@keyframes fadeIn {
+    to { opacity: 1; }
+}
+
+/* About Section */
+#about .interests {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    flex-wrap: wrap;
+}
+
+#about .interests li {
+    background: var(--card-bg);
+    padding: 8px 16px;
+    border-radius: 20px;
+    box-shadow: 0 2px 5px var(--shadow-color);
+    transition: transform 0.3s;
+}
+
+#about .interests li:hover {
+    transform: scale(1.05);
+}
+
+/* timeline style inside About */
+.timeline {
+    position: relative;
+    margin: 20px 0;
+    padding-left: 20px;
+}
+
+.timeline::before {
+    content: '';
+    position: absolute;
+    left: 9px;
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    background: var(--accent-color);
+}
+
+.event {
+    position: relative;
+    margin-bottom: 20px;
+    padding-left: 20px;
+}
+
+.event::before {
+    content: '';
+    position: absolute;
+    left: -11px;
+    top: 5px;
+    width: 10px;
+    height: 10px;
+    background: var(--accent-color);
+    border-radius: 50%;
+}
+
+/* Skills Section */
+.skill {
+    margin: 20px 0;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.skill span {
+    display: block;
+    margin-bottom: 6px;
+}
+
+.progress-bar {
+    width: 100%;
+    background: #222;
+    border-radius: 15px;
+    overflow: hidden;
+    height: 20px;
+    box-shadow: inset 0 1px 3px #000;
+}
+
+.progress {
+    height: 100%;
+    background: var(--accent-color);
+    transition: width 1s ease;
+}
+
+/* percentage widths for skill bars */
+.progress.html { width: 5%; }
+.progress.css { width: 5%; }
+.progress.cpp { width: 5%; }
+.progress.python { width: 5%; }
+.progress.db { width: 15%; }
+
+/* Projects Section */
+.project-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.card {
+    background: var(--card-bg);
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px var(--shadow-color);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px var(--shadow-color);
+}
+
+.card h3 {
+    margin-bottom: 10px;
+    font-weight: 600;
+    color: var(--accent-color);
+}
+
+.card p {
+    font-size: 0.9rem;
+}
+
+/* Contact Section */
+.contact-list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+}
+
+.contact-list li {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 1rem;
+    background: var(--card-bg);
+    padding: 10px 20px;
+    border-radius: 25px;
+    box-shadow: 0 2px 5px var(--shadow-color);
+    transition: background 0.3s;
+}
+
+.contact-list li:hover {
+    background: rgba(0, 255, 255, 0.1);
+}
+
+/* Responsive tweaks */
+@media (max-width: 600px) {
+    #hero h1 {
+        font-size: 2rem;
+    }
+    .container {
+        padding: 40px 0;
+    }
+    .profile-img {
+        width: 120px;
+        height: 120px;
+    }
+}

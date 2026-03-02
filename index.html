@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Metadata dan judul -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Saya</title>
+
+    <!-- Google Fonts: Poppins -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <!-- Icon library (Font Awesome CDN) untuk icon sederhana -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-pM8C+SjYj6Qd+6ER+/J7VLg/jSH1Ya+vDrK1uBDn8Afw5u5tOznOZ0KiK1+VqhL6cq8GN/TXYOL7pEh0jbPaba==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Style sheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Hero Section: big introduction with name and status -->
+    <header id="hero">
+        <div class="container">
+            <!-- profile image circle, replace src with your photo path -->
+            <img src="download.jpg" alt="Ihza Mahenra" class="profile-img">
+            <h1>Ihza Mahenra</h1>
+            <p class="status">Mahasiswa Ilmu Komputer<br>Universitas Halu Oleo</p>
+            <p class="status">"Saya percaya teknologi adalah seni, ilmu, dan masa depan. Mari kita bangun sesuatu yang luar biasa."</p>
+            <a href="#about" class="btn-scroll">About Me <i class="fas fa-arrow-down"></i></a>
+        </div>
+    </header>
+
+    <!-- About Me Section: personal introduction -->
+    <section id="about">
+        <div class="container fade-in">
+            <h2>About Me</h2>
+            <p>Halo! Saya Ihza Mahenra, seorang mahasiswa Ilmu Komputer di Universitas Halu Oleo. Saya memiliki semangat besar untuk menciptakan solusi digital yang elegan dan berdampak.</p>
+            <h3>Minat & Fokus</h3>
+            <ul class="interests">
+                <li>Web Development (front-end & back-end)</li>
+                <li>Machine Learning & Data Science</li>
+                <li>Database & Sistem Informasi</li>
+                <li>Cloud Computing & DevOps</li>
+            </ul>
+            <h3>Pendidikan</h3>
+            <div class="timeline">
+                <div class="event">
+                    <h4>2022 - Sekarang</h4>
+                    <p>Ilmu Komputer, Universitas Halu Oleo</p>
+                </div>
+            </div>
+            <h3>Hobi & Kegiatan</h3>
+            <p>Saat tidak berkutat dengan kode, saya suka membaca buku teknologi, bermain catur, dan berkontribusi pada proyek open-source.</p>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills">
+        <div class="container fade-in">
+            <h2>Skills</h2>
+            <div class="skill">
+                <span>HTML</span>
+                <div class="progress-bar"><div class="progress html"></div></div>
+            </div>
+            <div class="skill">
+                <span>CSS</span>
+                <div class="progress-bar"><div class="progress css"></div></div>
+            </div>
+            <div class="skill">
+                <span>C++</span>
+                <div class="progress-bar"><div class="progress cpp"></div></div>
+            </div>
+            <div class="skill">
+                <span>Python</span>
+                <div class="progress-bar"><div class="progress python"></div></div>
+            </div>
+            <div class="skill">
+                <span>Database</span>
+                <div class="progress-bar"><div class="progress db"></div></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section: showcase of selected works -->
+    <section id="projects">
+        <div class="container fade-in">
+            <h2>Projects</h2>
+            <div class="project-cards">
+                <div class="card">
+                    <h3>Sistem Manajemen Perpustakaan</h3>
+                    <p>Aplikasi CRUD lengkap dengan autentikasi dan laporan menggunakan PHP & MySQL.</p>
+                </div>
+                <div class="card">
+                    <h3>Machine Learning: Prediksi Diabetes</h3>
+                    <p>Model klasifikasi menggunakan Python (scikit‑learn) untuk memprediksi risiko diabetes pasien.</p>
+                </div>
+                <div class="card">
+                    <h3>Website Sederhana</h3>
+                    <p>Portofolio statis dengan HTML/CSS yang responsif dan efek interaktif.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <div class="container fade-in">
+            <h2>Contact</h2>
+            <ul class="contact-list">
+                <li><i class="fas fa-envelope"></i> email@contoh.com</li>
+                <li><i class="fab fa-whatsapp"></i> +62 812 3456 7890</li>
+                <li><i class="fab fa-github"></i> github.com/username</li>
+                <li><i class="fab fa-linkedin"></i> linkedin.com/in/username</li>
+            </ul>
+        </div>
+    </section>
+</body>
+</html>
